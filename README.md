@@ -70,3 +70,7 @@
 1. Direct + Sparse
 2. Points are well-distributed. Divide the image into 32x32 blocks and select one pixel inside each block with large gradient.
 
+# Multi-view Geometry
+### PMVS
+1. Uniform coverage by finding top-k local maxima from each image block (32 x 32 blocks).
+2. Matching -> expansion -> filtering -> polygonal surface reconstruction.
