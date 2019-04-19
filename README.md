@@ -74,3 +74,9 @@
 ### PMVS
 1. Uniform coverage by finding top-k local maxima from each image block (32 x 32 blocks).
 2. Matching -> expansion -> filtering -> polygonal surface reconstruction.
+
+## Stereo
+### Global optimization
+1. SGM (Semi-global matching) / LoopyBP: Generalize there's an axact solution for a chain.
+2. Graph cuts: generalize there's an exact solution if d has only two values.
+3. TRW-S
