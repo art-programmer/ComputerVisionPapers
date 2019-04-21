@@ -78,6 +78,10 @@
 1. Incrementally construct cost volume and minimize energy for dense mapping.
 2. Dense tracking.
 
+### CodeSLAM
+1. Use a sparse code to represent depth.
+2. Linear depth decoder (no ReLU). Jacobian of the decoder w.r.t the code can be computed.
+
 
 # Multi-view Geometry
 ### PMVS
