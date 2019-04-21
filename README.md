@@ -54,6 +54,11 @@
 3. Moving average for surface (TSDF) update.
 4. Surface measurement (V, N) -> Projective TSDF -> V, N -> pose (frame to model)
 
+### DynamicFusion
+1. Coarse 6D warp-field to model the dynamic motion.
+2. Estimation of the volumetric model-to-frame warp field -> fusion of the live frame depth map into the canonical space -> adaption of the warp-field to capture new geometry
+
+
 ### EKF-SLAM
 1. Estimate pose and landmark locations (represented in the state space).
 2. Assumption: known correspondences
