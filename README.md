@@ -21,9 +21,9 @@
 ### (Extended) Kalman filter
 1. A Bayes filter.
 2. Optimal for linear models with Gaussian distributions.
-3. Prediction step: xt (state) = At * xt-1 + Bt * ut (observation) + epsilon
-4. Correction step: zt (predicted observation) = Ct * xt + delta
-5. noise smoothing (improve noisy measurements) + state estimation (for state feedback) + recursive (computes next estimate using only most recent measurement)
+3. Prediction step: xt (state) = At * xt-1 + Bt * ut (observation) + epsilon.
+4. Correction step: zt (predicted observation) = Ct * xt + delta.
+5. noise smoothing (improve noisy measurements) + state estimation (for state feedback) + recursive (computes next estimate using only most recent measurement).
 6. Marginal and conditional of Gaussian are still Gaussian.
 7. Extended: local linearilization (at the current best-estimated point) of non-linear functions. (The inverse operation is the bottleneck.)
 8. Unscented: sampling techniques to find an approximated Gaussian distribution.
@@ -38,7 +38,7 @@
 ### MonoSLAM
 1. Used in a small volume (a room) in a long term.
 2. First real-time monocular SLAM system.
-3. Probabilistic filtering of a joint state consisting of camera and scene feature position estimates
+3. Probabilistic filtering of a joint state consisting of camera and scene feature position estimates.
 
 ### PTAM
 1. Separate tracking and mapping into two parallel threads.
@@ -46,22 +46,21 @@
 3. The map is densely initialized from a stereo pair (5-point algorithm).
 4. New points are initialized by epipolar search.
 5. A large number of points are mapped.
-6. Bundle adjustment + robust n-point pose estimation
+6. Bundle adjustment + robust n-point pose estimation.
 
 ### KinectFusion
 1. PTAM + dense reconstruction
 2. Projective TSDF (easy to parallelize but correct exactly only at the surface.
 3. Moving average for surface (TSDF) update.
-4. Surface measurement (V, N) -> Projective TSDF -> V, N -> pose (frame to model)
+4. Surface measurement (V, N) -> Projective TSDF -> V, N -> pose (frame to model).
 
 ### DynamicFusion
 1. Coarse 6D warp-field to model the dynamic motion.
-2. Estimation of the volumetric model-to-frame warp field -> fusion of the live frame depth map into the canonical space -> adaption of the warp-field to capture new geometry
-
+2. Estimation of the volumetric model-to-frame warp field -> fusion of the live frame depth map into the canonical space -> adaption of the warp-field to capture new geometry.
 
 ### EKF-SLAM
 1. Estimate pose and landmark locations (represented in the state space).
-2. Assumption: known correspondences
+2. Assumption: known correspondences.
 
 ## Direct methods
 ### LSD-SLAM
@@ -74,6 +73,11 @@
 ### DSO (Direct Sparse Odometry)
 1. Direct + Sparse
 2. Points are well-distributed. Divide the image into 32x32 blocks and select one pixel inside each block with large gradient.
+
+### DTAM (Dense Tracking and Mapping)
+1. Incrementally construct cost volume and minimize energy for dense mapping.
+2. Dense tracking.
+
 
 # Multi-view Geometry
 ### PMVS
