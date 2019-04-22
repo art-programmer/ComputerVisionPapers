@@ -141,3 +141,10 @@
 
 ## 2D-3D
 ### Deep Continuous Fusion for Multi-Sensor 3D Object Detection
+
+## Graph
+### FeaStNet
+1. Learn the weight for each neighbor point (similarity).
+2. Compute the weighted summation of features (non-local module).
+
+
