@@ -1,10 +1,15 @@
 # Instance Segmentation / Object Detection
 ## Proposal-based methods
 ## Proposal-free methods
+## Graph-based methods
+### Iterative Visual Reasoning Beyond Convolutions
+### Semantic Object Parsing with Graph LSTM
+
 ### Semi-convolutional operators
 1. Instance coloring.
 2. y = phi(x) + (u, v)
 3. min(y - cy). Attractive force only.
+
 # SLAM/SfM
 ## Basics
 ### Direct vs indirect
@@ -43,6 +48,7 @@
 
 ### Bundle adjustment
 1. Levenberg-Marquardt (LM) algorithm.
+
 ## Indirect methods
 ### MonoSLAM
 1. Used in a small volume (a room) in a long term.
@@ -131,6 +137,9 @@
 ### Tricks
 1. https://github.com/linxi159/GAN-training-tricks
 
+### CSGNet
+1. Rendering + RL
+
 # 3D Learning
 ## Point cloud
 ### Tengent Convolutions for Dense Prediction in 3D
@@ -139,6 +148,19 @@
 ### VoxelNet
 1. Divide point cloud into voxels and process points inside each voxel using a PointNet.
 
+### Point Convolutional Neural Networks by Extension Operators
+1. Apply extension operators to convert point cloud to volumetric representations (using basis functions).
+2. Process the volumetric representation and sample back to point cloud.
+
+### PointCNN
+1. K-neareat neighbor. Lift each neighbor into new feature, and concatenate lifted features with the current one.
+2. Learn a KxK transformation matrix to permute, and a standard convolution to process.
+
+### Recurrent Slice Networks for 3D Segmentation on Point Clouds
+1. Divide the point cloud into slices and use recurrent network to process slices sequentially.
+
+### Attentional ShapeContextNet for Point Cloud Recognition
+1. Non-local modules.
 ## 2D-3D
 ### Deep Continuous Fusion for Multi-Sensor 3D Object Detection
 
@@ -147,4 +169,14 @@
 1. Learn the weight for each neighbor point (similarity).
 2. Compute the weighted summation of features (non-local module).
 
+## Boxes
+### GRASS
+1. Recursive network (merging two parts into one node).
+2. Train an autoencoder and map the context feature to the latent representation for decoding.
 
+### Learning Shape Abstractions by Assembling Volumetric Primitives
+1. Voxel -> boxes
+2. Consistency loss + coverage loss. Reinforce algorithm to allow an arbitrary number of primitives.
+
+# Single-image Reconstruction
+### Multi-view Consistency as Supervisory Signal for Learning Shape and Pose Prediction
