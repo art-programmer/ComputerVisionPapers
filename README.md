@@ -1,4 +1,8 @@
 # Instance Segmentation / Object Detection
+## Conventional methods
+### Normalized cut
+1. Cut / Assoc(A) + Cut / Assoc(B). Cut, Assoc(A), and Assoc(B) are summation of edge weights.
+
 ## Proposal-based methods
 ## Proposal-free methods
 ## Graph-based methods
@@ -161,6 +165,9 @@
 
 ### Attentional ShapeContextNet for Point Cloud Recognition
 1. Non-local modules.
+
+### Escape from Cells: Deep Kd-Networks for the Recognition of 3D Point Cloud Models
+
 ## 2D-3D
 ### Deep Continuous Fusion for Multi-Sensor 3D Object Detection
 
