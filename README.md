@@ -1,10 +1,14 @@
 # Semantic Segmentation
 ### Conditional Random Fields as Recurrent Neural Networks
 ### ReSeg: A recurrent Neural Network-based Model for Semantic Segmentation
+
+
+
 # Instance Segmentation / Object Detection
 ## Conventional methods
 ### Normalized cut
 1. Cut / Assoc(A) + Cut / Assoc(B). Cut, Assoc(A), and Assoc(B) are summation of edge weights.
+
 
 ## Proposal-based methods
 ### ron reverse connection with objectness prior networks
@@ -17,7 +21,10 @@
 ### Cascade Object Detection with Deformable Part Models
 ### SSD: Single Shot MultiBox Detector
 
+
 ## Proposal-free methods
+
+
 ## Graph-based methods
 ### Iterative Visual Reasoning Beyond Convolutions
 ### Semantic Object Parsing with Graph LSTM
@@ -28,6 +35,8 @@
 3. min(y - cy). Attractive force only.
 
 ### Bottom-up Instance Segmentation using Deep Higher-Order CRFs
+
+
 
 # SLAM/SfM
 ## Basics
@@ -68,6 +77,7 @@
 ### Bundle adjustment
 1. Levenberg-Marquardt (LM) algorithm.
 
+
 ## Indirect methods
 ### MonoSLAM
 1. Used in a small volume (a room) in a long term.
@@ -96,6 +106,7 @@
 1. Estimate pose and landmark locations (represented in the state space).
 2. Assumption: known correspondences.
 
+
 ## Direct methods
 ### LSD-SLAM
 1. Pose-graph of keyframes with semi-dense depth maps.
@@ -115,6 +126,8 @@
 ### CodeSLAM
 1. Use a sparse code to represent depth.
 2. Linear depth decoder (no ReLU). Jacobian of the decoder w.r.t the code can be computed.
+
+
 
 # Stereo
 ### Global optimization
@@ -146,6 +159,7 @@
 1. Inner product layer at the end.
 2. Classify possible disparities.
 
+
 ## 3D correspondences
 ### PPFNet: Global Context Aware Local Features for Robust 3D Point Matching
 1. Point pair features
@@ -163,6 +177,7 @@
 ### Single-View 3D Scene Parsing by Attributed Grammar
 ### Indoor Segmentation and Support Inference from RGBD Images
 
+
 ## Scene completion
 ### Semantic Scene Completion from a Single Depth Image
 1. SUNCG
@@ -173,6 +188,7 @@
 1. Layered Scene Decomposition via the Occlusion-CRF
 2. Layer-structured 3D Scene Inference via View Synthesis
 
+
 ## Single-image Reconstruction
 ### Multi-view Consistency as Supervisory Signal for Learning Shape and Pose Prediction
 ### Factoring Shape, Pose, and Layout from the 2D Image of a 3D Scene
@@ -181,15 +197,19 @@
 ### Perspective Transformer Nets: Learning Single-View 3D Object Reconstruction without 3D Supervision
 1. Image -> voxel -> projection (supervision)
 
+
 ## Depth estimation
 ### SURGE: Surface Regularized Geometry Estimation from a Single Image
 1. CNN + DenseCRF
 
 ### Monocular Depth Estimation using Neural Regression Forest
 
+
+
 # Machine Learning
 ## Architectures
 ### Neural Module Networks
+
 
 ## Image Synthesis / GAN
 ### Tricks
@@ -198,6 +218,7 @@
 ### Adversarial Generator-Encoder Networks
 ### View Synthesis by Appearance Flow
 ### DRAW: A Recurrent Neural Network for Image Generation
+
 
 ## Transfer learning
 ### Cross Model Distillation for Supervision Transfer
@@ -210,18 +231,28 @@
 ### Unsupervised Domain Adaption by Backpropagation
 1. Domain confusion.
 
+
 ## Unsupervised learning
 ### Unsupervised Visual Representation Learning by Context Prediction.
 1. Predict relative location between patches.
+
+
+## One-shot learning
+### Learning Feed-Forward One-Shot Learners
+1. Train a learnet to predict the model parameters.
+2. Assess the model on another exemplar to predict if the new exemplar is of the same class with the one used by the learnet.
+
 
 ## Graph
 ### GraphGAN: Generating Graphs via Random Walk
 ### Defromable Graph Matching
 
+
 ## Attention
 ### Look Closer to See Better: Recurrent Attention Convolutional Neural Network for Fine-grained Image Recognition
 ### Recurrent Models of Visual Attention
 ### Show, Attend and Tell: Neural Image Caption Generation with Visual Attention
+
 
 ## Visualization
 ### Understanding Deep Image Representations by Inverting Them
@@ -235,6 +266,8 @@
 ### Deep Convolutional Inverse Graphics Network
 1. AutoEncoder. The latent code is divided into segments.
 2. Only one attribute changes in each mini-batch.
+
+
 
 # 3D Learning
 ## Point cloud
@@ -260,17 +293,21 @@
 
 ### Escape from Cells: Deep Kd-Networks for the Recognition of 3D Point Cloud Models
 
+
 ## Voxels
 ### CSGNet
 1. Rendering + RL
 
+
 ## 2D-3D
 ### Deep Continuous Fusion for Multi-Sensor 3D Object Detection
+
 
 ## Graph
 ### FeaStNet
 1. Learn the weight for each neighbor point (similarity).
 2. Compute the weighted summation of features (non-local module).
+
 
 ## Boxes
 ### GRASS
@@ -281,10 +318,14 @@
 1. Voxel -> boxes
 2. Consistency loss + coverage loss. Reinforce algorithm to allow an arbitrary number of primitives.
 
+
+
 # Tracking / Localization
 ### Detect to Track and Track to Detect
 
 ### Lost Shopping! Monocular Localization in Large Indoor Spaces
+
+
 
 # Pose Estimation
 ### Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields
