@@ -1,9 +1,22 @@
+# Semantic Segmentation
+### Conditional Random Fields as Recurrent Neural Networks
+### ReSeg: A recurrent Neural Network-based Model for Semantic Segmentation
 # Instance Segmentation / Object Detection
 ## Conventional methods
 ### Normalized cut
 1. Cut / Assoc(A) + Cut / Assoc(B). Cut, Assoc(A), and Assoc(B) are summation of edge weights.
 
 ## Proposal-based methods
+### ron reverse connection with objectness prior networks
+1. Multi-scale + reverse connection
+
+### Frustum PointNets for 3D Object Detection from RGB-D Data
+1. 2D proposals + PointNet
+
+### Reinforcement learning to choose proposals
+### Cascade Object Detection with Deformable Part Models
+### SSD: Single Shot MultiBox Detector
+
 ## Proposal-free methods
 ## Graph-based methods
 ### Iterative Visual Reasoning Beyond Convolutions
@@ -13,6 +26,8 @@
 1. Instance coloring.
 2. y = phi(x) + (u, v)
 3. min(y - cy). Attractive force only.
+
+### Bottom-up Instance Segmentation using Deep Higher-Order CRFs
 
 # SLAM/SfM
 ## Basics
@@ -111,7 +126,10 @@
 1. Uniform coverage by finding top-k local maxima from each image block (32 x 32 blocks).
 2. Matching -> expansion -> filtering -> polygonal surface reconstruction.
 
+### Manhattan-world Stereo
+1. Dominant axes + hypothesis planes + optimization
 # Correspondence
+
 ### LIFT: Learned Invariant Feature Transform
 1. Detector + orientation + descriptor
 
@@ -121,28 +139,102 @@
 ### Learning Good Correspondences
 1. Input a list of all possible matching pairs (coordinates only) and predict if each pair is valid or not.
 
+### NetVLAD: CNN Architecture for Weakly Supervised Place Recognition
+1. V(k) = sum(w_i(x_i - c_k), where K is the number of clusters.
+
+### Efficient Deep Learning for Stereo Matching
+1. Inner product layer at the end.
+2. Classify possible disparities.
+
 ## 3D correspondences
 ### PPFNet: Global Context Aware Local Features for Robust 3D Point Matching
 1. Point pair features
 2. PPF-FoldNet: rotation invariant
 
+
+
 # Scene Understanding
+### Naural Scene De-rendering
+1. Reinforce algorithm based on rendered images
+### Learning to Parse Wireframes in Images of Man-Made Environments
+1. Junctions + post-processing
+### Im2Pano3D
+1. Single image -> 360 degree panorama.
+### Single-View 3D Scene Parsing by Attributed Grammar
+### Indoor Segmentation and Support Inference from RGBD Images
+
 ## Scene completion
 ### Semantic Scene Completion from a Single Depth Image
 1. SUNCG
 2. TSDF input.
 
+### ScanComplete: Large-Scale Scene Completion and Semantic Segmentation for 3D Scans
 ### Layered scene decomposition
 1. Layered Scene Decomposition via the Occlusion-CRF
 2. Layer-structured 3D Scene Inference via View Synthesis
 
+## Single-image Reconstruction
+### Multi-view Consistency as Supervisory Signal for Learning Shape and Pose Prediction
+### Factoring Shape, Pose, and Layout from the 2D Image of a 3D Scene
+### Automatic Photo Pop-up
+### Unfolding an Indoor Origami World
+### Perspective Transformer Nets: Learning Single-View 3D Object Reconstruction without 3D Supervision
+1. Image -> voxel -> projection (supervision)
 
-# Image Synthesis / GAN
+## Depth estimation
+### SURGE: Surface Regularized Geometry Estimation from a Single Image
+1. CNN + DenseCRF
+
+### Monocular Depth Estimation using Neural Regression Forest
+
+# Machine Learning
+## Architectures
+### Neural Module Networks
+
+## Image Synthesis / GAN
 ### Tricks
 1. https://github.com/linxi159/GAN-training-tricks
 
-### CSGNet
-1. Rendering + RL
+### Adversarial Generator-Encoder Networks
+### View Synthesis by Appearance Flow
+### DRAW: A Recurrent Neural Network for Image Generation
+
+## Transfer learning
+### Cross Model Distillation for Supervision Transfer
+1. Similarity loss between internal features.
+2. Paired images of the same scene with different modalities.
+
+### Generic 3D Representation via Pose Estimation and Matching
+1. Porxy 3D tasks: object-centric camera pose estimation and wide baseline feature matching.
+
+### Unsupervised Domain Adaption by Backpropagation
+1. Domain confusion.
+
+## Unsupervised learning
+### Unsupervised Visual Representation Learning by Context Prediction.
+1. Predict relative location between patches.
+
+## Graph
+### GraphGAN: Generating Graphs via Random Walk
+### Defromable Graph Matching
+
+## Attention
+### Look Closer to See Better: Recurrent Attention Convolutional Neural Network for Fine-grained Image Recognition
+### Recurrent Models of Visual Attention
+### Show, Attend and Tell: Neural Image Caption Generation with Visual Attention
+
+## Visualization
+### Understanding Deep Image Representations by Inverting Them
+1. Similar to DeepDream.
+
+### Object Detectors Emerge in Deep Scene CNNs
+1. Simplifying the input images.
+2. Visualizing the receptive fields of units and their activation patterns.
+3. Indentifying the semantics of internal units.
+
+### Deep Convolutional Inverse Graphics Network
+1. AutoEncoder. The latent code is divided into segments.
+2. Only one attribute changes in each mini-batch.
 
 # 3D Learning
 ## Point cloud
@@ -168,6 +260,10 @@
 
 ### Escape from Cells: Deep Kd-Networks for the Recognition of 3D Point Cloud Models
 
+## Voxels
+### CSGNet
+1. Rendering + RL
+
 ## 2D-3D
 ### Deep Continuous Fusion for Multi-Sensor 3D Object Detection
 
@@ -185,5 +281,14 @@
 1. Voxel -> boxes
 2. Consistency loss + coverage loss. Reinforce algorithm to allow an arbitrary number of primitives.
 
-# Single-image Reconstruction
-### Multi-view Consistency as Supervisory Signal for Learning Shape and Pose Prediction
+# Tracking / Localization
+### Detect to Track and Track to Detect
+
+### Lost Shopping! Monocular Localization in Large Indoor Spaces
+
+# Pose Estimation
+### Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields
+### Lifting from the Deep: Convolutional 3D Pose Estimation from a Single Image
+### Structured Feature Learning for Pose Estimation
+### End-to-End Learning of Deformable Mixture of Parts and Deep Convolutional Neural Networks for Human Pose Estimation
+1. Message passing
