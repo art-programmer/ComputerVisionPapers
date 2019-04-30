@@ -2,7 +2,9 @@
 ### Conditional Random Fields as Recurrent Neural Networks
 ### ReSeg: A recurrent Neural Network-based Model for Semantic Segmentation
 
-
+## Co-segmentation
+### CoSegNet: Deep Co-Segmentation of 3D Shapes with Group Consistency Loss
+1. Propose novel group consistency loss for unsupervised part-segmentation. Use inconsistent dataset to train a shape refiner.
 
 # Instance Segmentation / Object Detection
 ## Conventional methods
