@@ -335,12 +335,14 @@
 
 # Tracking / Localization
 ### Detect to Track and Track to Detect
-
 ### Lost Shopping! Monocular Localization in Large Indoor Spaces
+### Learning Transformation Synchronization
+1. Predict weights between every pair of views, which are used for estimating the absolute pose.
+2. Repeat the process iteratively.
 
 
 
-# Pose Estimation
+# Human Pose Estimation
 ### Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields
 ### Lifting from the Deep: Convolutional 3D Pose Estimation from a Single Image
 ### Structured Feature Learning for Pose Estimation
