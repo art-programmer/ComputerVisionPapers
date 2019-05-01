@@ -242,6 +242,11 @@
 ### Unsupervised Domain Adaption by Backpropagation
 1. Domain confusion.
 
+### A Survey on Deep Transfer Learning
+1. Instances-based: find similar instances in the source domain.
+2. Mapping-based: map instances from two domains into a new data space with better similarity.
+3. Network-based: reuse the partial of network pre-trained in the source domain.
+4. Adversarial-based: Use domain confusion to penalize the network if it predict the domain correctly.
 
 ## Unsupervised learning
 ### Unsupervised Visual Representation Learning by Context Prediction.
