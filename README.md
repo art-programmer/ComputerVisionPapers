@@ -208,6 +208,8 @@
 2. Viewer-centered gneralizes better than object-centered. It has good shape prediction but poor pose prediction. Object-centered tend to memorizes the observed meshes, and its learned features can be used for object recognition.
 3. The model trained to predict shape and pose can be finetuned for object recognition. Maybe it will generalize better.
 
+### FrameNet: Learning Local Canonical Frames of 3D Surfaces from a Single RGB Image
+1. Predict per-pixel dominant directions (frames), which could be used for other applications.
 
 ## Depth estimation
 ### SURGE: Surface Regularized Geometry Estimation from a Single Image
