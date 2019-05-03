@@ -161,6 +161,9 @@
 ### NetVLAD: CNN Architecture for Weakly Supervised Place Recognition
 1. V(k) = sum(w_i(x_i - c_k), where K is the number of clusters.
 
+### Detect-to-Retrive: Efficient Regional Aggregation for Image Search
+1. Regional VLAD/ASMK
+
 ### Efficient Deep Learning for Stereo Matching
 1. Inner product layer at the end.
 2. Classify possible disparities.
@@ -210,6 +213,12 @@
 
 ### FrameNet: Learning Local Canonical Frames of 3D Surfaces from a Single RGB Image
 1. Predict per-pixel dominant directions (frames), which could be used for other applications.
+
+### Learning View Priors for Single-view 3D Reconstruction
+1. Deformable mesh model (from Neural 3D Mesh Renderer).
+2. Use rendered views (for both observed and unseen views) to add discriminative loss.
+3. Internal pressure loss to encourage larger volume.
+
 
 ## Depth estimation
 ### SURGE: Surface Regularized Geometry Estimation from a Single Image
