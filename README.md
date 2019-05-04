@@ -168,6 +168,8 @@
 1. Inner product layer at the end.
 2. Classify possible disparities.
 
+### Learning Correspondence from the Cycle-consistency of Time
+1. Find the most similar patch forward and backward.
 
 ## 3D correspondences
 ### PPFNet: Global Context Aware Local Features for Robust 3D Point Matching
