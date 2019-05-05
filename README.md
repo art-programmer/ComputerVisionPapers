@@ -171,6 +171,18 @@
 ### Learning Correspondence from the Cycle-consistency of Time
 1. Find the most similar patch forward and backward.
 
+### End-to-End Learning of Geometry and Context for Deep Stereo Regression
+### DeepMVS: Learning Multi-view Stereopsis
+1. Cost volume based on plane-sweep and photometric difference. Volume aggregation for multiple views.
+
+### MVSNet: Depth Inference for Unstructured Multi-view Stereo
+1. Use variance to consruct the cost volume. Use 3D CNN for regularization.
+2. Depth refinement based on Deep image matting.
+
+### Recurrent MVSNet for High-resolution Multi-view Stereo Depth Inference
+1. Use GRU to process the cost volume sequentially. Concatenate all the outputs to get the regularized cost volume.
+
+
 ## 3D correspondences
 ### PPFNet: Global Context Aware Local Features for Robust 3D Point Matching
 1. Point pair features
@@ -227,6 +239,9 @@
 1. CNN + DenseCRF
 
 ### Monocular Depth Estimation using Neural Regression Forest
+### DeMoN: Depth and Motion Network for Learning Monocular Stereo
+1. Bootstrap net + iterative net + refinement net
+2. Flow-based image warping for iterative refinement.
 
 
 
