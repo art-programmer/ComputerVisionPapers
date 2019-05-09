@@ -343,6 +343,15 @@
 1. Rendering + RL
 
 
+## Surfaces
+### DeepSDF: Learning Continuous Signed Distance Functions for Shape Representation
+1. AutoDecoder which takes a 3D point and a shape code as input and predicts the SDF for the 3D point.
+
+### Learning Shape Templates with Structured Implicit Functions
+1. Use structured implicit shape representation (100x7 parameters) to represent the 3D surface.
+2. Classify sampled points as inside or outside based on the predicted parameters, which defines the loss.
+
+
 ## 2D-3D
 ### Deep Continuous Fusion for Multi-Sensor 3D Object Detection
 
