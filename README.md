@@ -233,6 +233,10 @@
 2. Use rendered views (for both observed and unseen views) to add discriminative loss.
 3. Internal pressure loss to encourage larger volume.
 
+### MeshDepth: Disconnected Mesh-based Deep Depth Prediction
+1. Gnerate 2D mesh based on Canny edges.
+2. Estimate plane parameters for each face.
+
 
 ## Depth estimation
 ### SURGE: Surface Regularized Geometry Estimation from a Single Image
